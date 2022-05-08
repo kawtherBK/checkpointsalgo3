@@ -1,0 +1,40 @@
+//Produit scalaire
+PROCEDURE dot_product
+VAR
+    int V1[N], V2[N]; 
+    int N;     
+    int I;     
+    reel PS:=0;  
+BEGIN
+    For I FROM 0 TO I<N DO
+    {
+     Write("Elément : ", I ,"de la vecteur U");
+     Read(U[I]);
+    }
+    END-FOR
+
+    For I FROM 0 TO I<N DO
+    {
+     Write("Elément: ", I ,"de la vecteur V");
+     Read(V[I]);
+    }
+    END-FOR
+    For PS FROM 0 TO I<N DO
+      PS += U[I]*V[I];
+    END-FOR
+      Write("Produit scalaire :" PS);
+      return 0;
+
+END
+
+//Vecteurs orthogonaux
+ALGORITHM vect_orthogo (PS:REEL)
+
+BEGIN 
+     IF(PS==0)THEN
+        Write("vecteurs orthogonaux");
+      ELSE
+        Write("vecteurs non orthogonaux");
+     END_IF
+
+END
